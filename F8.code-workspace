@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"name": "F8",
+			"path": "."
+		},
+		{
+			"name": "F8-shop",
+			"path": "../F8-shop"
+		},
+		{
+			"path": "../w3_band"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "F8",
+		"liveServer.settings.port": 5501
+	}
+}

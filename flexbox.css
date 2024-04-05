@@ -1,0 +1,138 @@
+#first-heading{
+   min-height:42px;
+   background-color: #ccc; 
+}
+/* Navbar */
+.nav{
+    min-height:42px;
+    background-color:rgb(255, 13, 33);
+    display: flex;
+    justify-content:space-between;
+}
+.nav-list {
+    padding-left : 0;
+    margin: auto 16px;
+}
+.nav-item {
+    color: azure;
+    list-style: none;
+    margin: 0 8px;
+    display: inline-block;
+}
+/* Form layout */
+.form-container {
+    max-width: 720px;
+    padding: 32px;
+    margin: 36px auto 0 auto;
+    background-color: #fff;
+}
+.form__row {
+    padding: 8px 0;
+    display:flex;
+}
+.form__label {
+    min-width: 90px;
+}
+.form__input {
+    flex: 1;
+}
+/* column layout */
+.column-layout {
+    margin-top: 36px;
+    padding : 12px 0;
+    background-color: #fff;
+    display: flex;
+}
+.column-item {
+    padding : 0 16px;
+    flex:1;
+}
+.siderbar-one {
+    flex :1;
+}
+.siderbar-two{
+flex:1;
+}
+.main-column{
+flex:1;
+}
+/* feature layout */
+.feature-layout{
+    margin-top:36px;
+    display: flex;
+    justify-content:space-between;
+}
+.feature-item{
+    padding : 12px 16px;
+    margin-top:16px;
+    flex-basis: 30%;
+}
+.feature-item:nth-child(1){
+    background-color: #4a82b2;
+}
+.feature-item:nth-child(2){
+    background-color:#dd6f6f
+}
+.feature-item:nth-child(3){
+    background-color:rgb(230, 149, 230)
+}
+/* wrap layout */
+.wrap-layout{
+    background-color: #fff;
+    margin-top:36px;
+    padding: 12px 0 32px 0;
+    display : flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.wrap-layout_item{
+    width:148px;
+    height:90px;
+    color: #fff;
+    text-align: center;
+    line-height: 90px;
+    font-size:48px;
+    font-weight: 700;
+    margin-top:20px;
+    background-color: rgb(209, 77, 77);
+}
+/* canter-layout */
+.center-layout{
+    background-color:rgb(138, 118, 116);
+    margin: 36px auto  0 auto;
+    padding : 32px 0;
+    max-width: 640px;
+    height: 360px;
+    display: flex;
+}
+.center-layout_item{
+    font-size: 42px;
+    font-weight: 700;
+    margin: auto;
+}
+/* the end */
+.the-end{
+    margin: 12px auto 48px auto;
+    padding: 32px 0;
+    max-width: 740px;
+    min-height: 360px;
+    display:flex;
+}
+.the-end_first{
+    padding: 4px 16px;
+    background-color: #c3c3c3;
+    flex: 1;
+}
+.the-end_second{
+    flex: 1;
+}
+.the-end_second-one{
+    flex: 1;
+    padding: 4px 16px;
+    background-color:rgb(218, 177, 217)
+}
+.the-end_second-two{
+    padding: 4px 16px;
+    flex: 1;
+    background-color:rgb(221, 140, 140)
+}

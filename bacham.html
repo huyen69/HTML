@@ -1,0 +1,355 @@
+<div class="header__search hide-on-mobile">
+    <div class="header__search-input-wrap">
+        <input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm sản phẩm">
+        <div class="header__search-history">
+            <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+            <ul class="header__search-history-list">
+               <li class="header__search-history-item">
+                   <a href="">Kem dưỡng da</a>
+               </li> 
+               <li class="header__search-history-item">
+                    <a href="">Kem trị mụn</a>
+                </li> 
+                <li class="header__search-history-item">
+                    <a href="">Điện thoại</a>
+                </li> 
+            </ul>
+        </div>
+    </div>
+    <div class="header__search-select">
+        <span class="header__search-select-label">Trong shop</span>
+        <i class="header__search-select-icon fas fa-chevron-down"></i>
+    
+        <ul id="header__search-option" class="header__search-option">
+            <li id="option-1" class="header__search-option-item header__search-option-item--active" onclick="chosenOption('option-1', 'options-2');">
+                <span>Trong shop</span>
+                <i class="header__search-option-icon fas fa-check"></i>
+            </li>
+            <li id="option-2" class="header__search-option-item" onclick="chosenOption('option-2', 'options-1');">
+                <span>Ngoài shop</span>
+                <i class="fas fa-check"></i>
+            </li>
+        </ul>
+    </div>
+    <button class="header__search-btn">
+        <i class="header__search-btn-icon fas fa-search"></i>
+    </button>
+</div>
+
+<div class="header__mobile-serach">
+    <label for="select-bar-search">
+        <i class="header__mobile-search-icon fas fa-search"></i>
+    </label>
+
+    <input type="checkbox" name="" id="select-bar-search">
+    
+    <label for="select-bar-search" class="header__mobile-search-wrap">
+        <label for="select-bar-search">
+            <i class="header__mobile-search-close fas fa-times"></i>
+        </label>
+        <input type="text" name="" class="header__mobile-search-input" placeholder="Tìm kiếm">
+        <button class="header__search-btn">
+            <i class="header__search-btn-icon fas fa-search"></i>
+        </button>
+    </label>
+</div>
+
+<!-- Cart layout -->
+<div class="header__cart">
+    <div class="header__cart-wrap">
+        <i class="header__cart-icon fas fa-shopping-cart"></i>
+        <span class="header__cart-notice">3</span>
+
+        <!-- No cart: header__cart-list--noCart -->
+        <div class="header__cart-list">
+            <img src="./assets/img/noCart.png" alt="" class="header__cart-list--noCart-img">
+            <span class="header__cart-list-no-cart-msg">
+                Chưa có sản phẩm
+            </span>
+
+            <h4 class="header__cart-heading">Sản phẩm đã thêm </h4>
+            <ul class="header__cart-list-item">
+                <!-- Cart item -->
+                <li class="header__cart-item">
+                    <img src="https://img.abaha.vn/photos/resized/320x/83-1596776828-myphamohui-lgvina.png" alt="" class="header__cart-img">
+                    <div class="header__cart-item-info">
+                        <div class="header__cart-item-head">
+                            <h5 class="header__cart-item-name">Bộ cấp nước se khít lỗ chân lông Sum37 Warer-full Set 5p</h5>
+                            <div class="header__cart-price-wrap">
+                                <span class="header__cart-item-price">450.000đ</span>
+                                <span class="header__cart-item-multiply">x</span>
+                                <span class="header__cart-item-qnt">2</span>
+                            </div>
+                        </div>
+                        <div class="header__cart-item-body">
+                            <span class="header__cart-item-description">
+                                Phân loại: Bạc
+                            </span>
+                            <span class="header__cart-item-remove hide-on-mobile-tablet">Xóa</span>
+                            <button class="btn btn--primary header__cart-item-remove-btn">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                </li>
+                <li class="header__cart-item">
+                    <img src="https://img.abaha.vn/photos/resized/320x/73-1574413855-myohui.png" alt="" class="header__cart-img">
+                    <div class="header__cart-item-info">
+                        <div class="header__cart-item-head">
+                            <h5 class="header__cart-item-name">Set dưỡng trắng trị nám Whoo Gong Jin Hyand Seol 5 món </h5>
+                            <div class="header__cart-price-wrap">
+                                <span class="header__cart-item-price">390.000đ</span>
+                                <span class="header__cart-item-multiply">x</span>
+                                <span class="header__cart-item-qnt">1</span>
+                            </div>
+                        </div>
+                        <div class="header__cart-item-body">
+                            <span class="header__cart-item-description">
+                                Phân loại: Bạc
+                            </span>
+                            <span class="header__cart-item-remove hide-on-mobile-tablet">Xóa</span>
+                            <button class="btn btn--primary header__cart-item-remove-btn">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="header__cart-item">
+                    <img src="https://img.abaha.vn/photos/resized/320x/73-1573129886-myohui.png" alt="" class="header__cart-img">
+                    <div class="header__cart-item-info">
+                        <div class="header__cart-item-head">
+                            <h5 class="header__cart-item-name">Set tái sinh Su:M37 Losec Summa 5 món</h5>
+                            <div class="header__cart-price-wrap">
+                                <span class="header__cart-item-price">850.000đ</span>
+                                <span class="header__cart-item-multiply">x</span>
+                                <span class="header__cart-item-qnt">3</span>
+                            </div>
+                        </div>
+                        <div class="header__cart-item-body">
+                            <span class="header__cart-item-description">
+                                Phân loại: Bạc
+                            </span>
+                            <span class="header__cart-item-remove hide-on-mobile-tablet">Xóa</span>
+                            <button class="btn btn--primary header__cart-item-remove-btn">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <a href="" class="header__cart--view btn btn--primary">Xem giỏ hàng</a>
+        </div>
+    </div>                  
+</div>
+</div>
+<div class="header__search-history">
+    <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+    <ul class="header__search-history-list">
+       <li class="header__search-history-item">
+           <a href="">Kem dưỡng da</a>
+       </li> 
+       <li class="header__search-history-item">
+            <a href="">Kem trị mụn</a>
+        </li> 
+        <li class="header__search-history-item">
+            <a href="">Điện thoại</a>
+        </li> 
+    </ul>
+</div>
+.header__search-history {
+    z-index: 1;
+    position: absolute;
+    top: calc(100% + 2px);
+    left: 0;
+    width: calc(100% - 16px);
+    background-color: var(--white-color);
+    border-radius: 2px;
+    box-shadow: 0 0 5px #ccc;
+    display: none;
+    overflow: hidden;
+}
+<div class="home-filter hide-on-mobile-tablet">
+    <span class="home-filter__label">Sắp xếp theo</span>
+    <button class="btn home-filter__btn">Phổ biến</button>
+    <button class="btn btn--primary home-filter__btn">Mới nhất</button>
+    <button class="btn home-filter__btn">Bán chạy</button>
+
+    <div class="select-input">
+        <span class="select-input__label">Giá</span>
+        <i class="select-input__icon fas fa-chevron-down"></i>
+        
+        <!-- List option -->
+        <ul class="select-input__list">
+            <li class="select-input__item">
+                <a href="" class="select-input__link">Giá: thấp đến cao</a>
+            </li>
+            <li class="select-input__item">
+                <a href="" class="select-input__link">Giá: cao đến thấp</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="home-filter__page">
+        <span class="home-filter__page-num">
+            <span class="home-filter__page-current">1</span>/14
+        </span>
+        <div class="home-filter__page-control">
+            <a href="" class="home-filter__page-btn home-filter__page-icon--disable">
+                <i class="home-filter__page-icon fas fa-chevron-left"></i>
+            </a>
+            <a href="" class="home-filter__page-btn">
+                <i class="home-filter__page-icon fas fa-chevron-right"></i>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="home-product-item__img" style="background-image: url(https://img.abaha.vn/photos/resized/320x/83-1600498324-myphamohui-lgvina.png);"></div>
+<a href="" class="home-product-item">
+    <div class="home-product-item__img" style="background-image: url(https://img.abaha.vn/photos/resized/320x/83-1600498324-myphamohui-lgvina.png);"></div>
+    <h4 class="home-product-item__name">Son Whoo Luxury Lip Rouge mini</h4>
+    <div class="home-product-item__price">
+        <span class="home-product-item__price-old">550.000đ</span>
+        <span class="home-product-item__price-current">450.000đ</span>
+    </div>
+    <div class="home-product-item__action">
+        <span class="home-product-item__like home-product-item__like--liked">
+            <i class="home-product-item__like-icon-default far fa-heart"></i>
+            <i class="home-product-item__like-icon-liked fas fa-heart"></i>
+        </span>
+        <div class="home-product-item__rating">
+            <i class="home-product-item__rating--gold fas fa-star"></i>
+            <i class="home-product-item__rating--gold fas fa-star"></i>
+            <i class="home-product-item__rating--gold fas fa-star"></i>
+            <i class="home-product-item__rating--gold fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span class="home-product-item__sold">88 đã bán</span>
+        </div>
+    </div>
+    <div class="home-product-item__favorite">
+        <i class="fas fa-check"></i>
+        <span class="">Yêu thích</span>
+    </div>
+    <div class="home-product-item__sale-off">
+        <span class="home-product-item__sale-off-percent">37%</span>
+        <span class="home-product-item__sale-off-label">GIẢM</span>
+    </div>
+</a>
+<div class="grid__column-2-4">
+    <!-- Product items -->
+    <a href="" class="home-product-item">
+        <div class="home-product-item__img" style="background-image: url(https://img.abaha.vn/photos/resized/320x/83-1600498324-myphamohui-lgvina.png);"></div>
+        <h4 class="home-product-item__name">Son Whoo Luxury Lip Rouge mini</h4>
+        <div class="home-product-item__price">
+            <span class="home-product-item__price-old">550.000đ</span>
+            <span class="home-product-item__price-current">450.000đ</span>
+        </div>
+        <div class="home-product-item__action">
+            <span class="home-product-item__like home-product-item__like--liked">
+                <i class="home-product-item__like-icon-default far fa-heart"></i>
+                <i class="home-product-item__like-icon-liked fas fa-heart"></i>
+            </span>
+            <div class="home-product-item__rating">
+                <i class="home-product-item__rating--gold fas fa-star"></i>
+                <i class="home-product-item__rating--gold fas fa-star"></i>
+                <i class="home-product-item__rating--gold fas fa-star"></i>
+                <i class="home-product-item__rating--gold fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span class="home-product-item__sold">88 đã bán</span>
+            </div>
+        </div>
+        <div class="home-product-item__origin">
+            <span class="home-product-item__brand">Whoo</span>
+            <span class="home-product-item__origin-name">Hàn Quốc</span>
+        </div>
+        <div class="home-product-item__favorite">
+            <i class="fas fa-check"></i>
+            <span class="">Yêu thích</span>
+        </div>
+        <div class="home-product-item__sale-off">
+            <span class="home-product-item__sale-off-percent">37%</span>
+            <span class="home-product-item__sale-off-label">GIẢM</span>
+        </div>
+    </a>
+</div>          <div class="grid__column-2-4">
+    <!-- Product items -->
+    <a href="" class="home-product-item">
+        <div class="home-product-item__img" style="background-image: url(https://img.abaha.vn/photos/resized/320x/83-1600498324-myphamohui-lgvina.png);"></div>
+        <h4 class="home-product-item__name">Son Whoo Luxury Lip Rouge mini</h4>
+        <div class="home-product-item__price">
+            <span class="home-product-item__price-old">550.000đ</span>
+            <span class="home-product-item__price-current">450.000đ</span>
+        </div>
+        <div class="home-product-item__action">
+            <span class="home-product-item__like home-product-item__like--liked">
+                <i class="home-product-item__like-icon-default far fa-heart"></i>
+                <i class="home-product-item__like-icon-liked fas fa-heart"></i>
+            </span>
+            <div class="home-product-item__rating">
+                <i class="home-product-item__rating--gold fas fa-star"></i>
+                <i class="home-product-item__rating--gold fas fa-star"></i>
+                <i class="home-product-item__rating--gold fas fa-star"></i>
+                <i class="home-product-item__rating--gold fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span class="home-product-item__sold">88 đã bán</span>
+            </div>
+        </div>
+        <div class="home-product-item__origin">
+            <span class="home-product-item__brand">Whoo</span>
+            <span class="home-product-item__origin-name">Hàn Quốc</span>
+        </div>
+        <div class="home-product-item__favorite">
+            <i class="fas fa-check"></i>
+            <span class="">Yêu thích</span>
+        </div>
+        <div class="home-product-item__sale-off">
+            <span class="home-product-item__sale-off-percent">37%</span>
+            <span class="home-product-item__sale-off-label">GIẢM</span>
+        </div>
+    </a>
+</div>
+                                    <div class="grid__column-2-4">
+                                        <!-- Product items -->
+                                        <a href="" class="home-product-item">
+                                            <div class="home-product-item__img" style="background-image: url(https://img.abaha.vn/photos/resized/320x/83-1600498324-myphamohui-lgvina.png);"></div>
+                                            <h4 class="home-product-item__name">Son Whoo Luxury Lip Rouge mini</h4>
+                                            <div class="home-product-item__price">
+                                                <span class="home-product-item__price-old">550.000đ</span>
+                                                <span class="home-product-item__price-current">450.000đ</span>
+                                            </div>
+                                            <div class="home-product-item__action">
+                                                <span class="home-product-item__like home-product-item__like--liked">
+                                                    <i class="home-product-item__like-icon-default far fa-heart"></i>
+                                                    <i class="home-product-item__like-icon-liked fas fa-heart"></i>
+                                                </span>
+                                                <div class="home-product-item__rating">
+                                                    <i class="home-product-item__rating--gold fas fa-star"></i>
+                                                    <i class="home-product-item__rating--gold fas fa-star"></i>
+                                                    <i class="home-product-item__rating--gold fas fa-star"></i>
+                                                    <i class="home-product-item__rating--gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <span class="home-product-item__sold">88 đã bán</span>
+                                                </div>
+                                            </div>
+                                            <div class="home-product-item__favorite">
+                                                <i class="fas fa-check"></i>
+                                                <span class="">Yêu thích</span>
+                                            </div>
+                                            <div class="home-product-item__sale-off">
+                                                <span class="home-product-item__sale-off-percent">37%</span>
+                                                <span class="home-product-item__sale-off-label">GIẢM</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <ul class="footer-list">
+                                        <li class="footer-item">
+                                            <a href="">Trung tâm trợ giúp</a>
+                                        </li>
+                                        <li class="footer-item">
+                                            <a href="">F8-Shop Mall</a>
+                                        </li>
+                                        <li class="footer-item">
+                                            <a href="">Hướng dẫn mua hàng</a>
+                                        </li>
+                                    </ul>
